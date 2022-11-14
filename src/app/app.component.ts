@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spotifyClon';
+
+  // Compare two arrays
+  compareArrays(a: number[], b: number[]) {
+    return a.length === b.length && a.every((value, index) => value === b[index]);
+  }
 }
+
+
